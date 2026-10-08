@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+}
+
+#web {
+  margin-bottom: 55px;
+}
+
+#img {
+  display: flex;
+  width: 200px;
+  padding-left: 200px;
+}
+#dev {
+  text-decoration: none;
+  color: #6e2525;
+}
+#dev:visited {
+  color: #6e2525;
+}
+#header {
+  font-family: "Courier New", Courier, monospace;
+  height: 130px;
+  display: flex;
+  padding-top: 0px;
+  background-color: #d9d9d9;
+}
+#place {
+  margin-bottom: 100px;
+}
+#logo {
+  font-size: 48px;
+}
+.name {
+  flex: 1;
+  padding: 0px 20px 20px 20px;
+  margin-top: 50px;
+}
+
+.menu {
+  display: inline-block;
+  padding-right: 40px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: transform 0.3s;
+  color: #6e2525;
+}
+
+.menu:visited {
+  color: #6e2525;
+}
+
+.menu:hover {
+  transform: scale(1.05);
+  color: #554c4c;
+}
+
+#body {
+  margin-top: 0px;
+  width: 1536px;
+  height: 500px;
+  background-color: #2e2323;
+}
+
+.text {
+  margin-top: 0px;
+  padding-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+#place {
+  padding: 0;
+}
+
+#btn {
+  background-color: #6bb859;
+  border-radius: 25px;
+  border-color: #372929;
+  font-size: 1.5em;
+  color: #ffffff;
+  height: 2em;
+  width: 10em;
+}
+
+#btncontainer {
+  text-align: center;
+  text-decoration: none;
+}
+
+#btn:hover {
+  background-color: #8ecc80;
+  border-color: rgb(186, 226, 226);
+  cursor: pointer;
+}
+
+#footer {
+  background-color: #d9d9d9;
+}
+
+#left-footer {
+  padding-left: 25px;
+  padding-top: 25px;
+  height: 20px;
+  width: 1000px;
+}
+
+#right-footer {
+  padding-left: 1250px;
+}
+
+.menu2 {
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.menu2:hover {
+  transform: scale(1.05);
+  color: #554c4c;
+}
+
+img {
+  transition: transform 0.5s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+#body-register {
+  background-color: #2e2323;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+
+}
+#ateliersfield {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+#daysfield {
+  width: 300px;
+}
+
+
+
+#form {
+    border: 3px , rgb(190, 174, 174) , solid;
+    border-radius: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+  }
+
+label {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4em;
+}
+
+#submit {
+  background-color: #6bb859;
+  border-radius: 25px;
+  border-color: #372929;
+  font-size: 1.5em;
+  color: #ffffff;
+  height: 2em;
+  width: 10em;
+}
+#submit:hover {
+  background-color: #8ecc80;
+  border-color: rgb(186, 226, 226);
+  cursor: pointer;
+}
