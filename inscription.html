@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="name" id="logo">
+        Atlas <a id="dev" href="index.html">Dev</a> Days
+      </h1>
+      <div class="name">
+        <a id="home" href="index.html" class="menu">Accueil</a>
+        <a id="register" href="inscription.html" class="menu">Inscription</a>
+        <a id="program" href="programme.html" class="menu">Programmer</a>
+        <a id="cards" href="intervenants.html" class="menu">Intervenants</a>
+      </div>
+    </div>
+    <div id="body-register">
+      <form id="form">
+        <h2>Veillez remplir cette formule</h2>
+        <label for="email">Email : </label>
+        <input type="email" id="email" required /><br /><br />
+        <label for="tel">Telephone : </label>
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          required
+          pattern="^(\+212|0)[5-7][0-9]{8}$"
+        /><br /><br />
+
+        <label>Profil : </label>
+        <select>
+          <option>Étudiant(e)</option>
+          <option>Développeur(se)</option>
+          <option>Autre</option></select
+        ><br /><br />
+        <fieldset id="ateliersfield">
+          <label>Ateliers : </label><br><br>  
+          <input type="checkbox" id="front" />
+          <label for="front">Développement Front-End</label><br />
+          <input type="checkbox" id="react" />
+          <label for="react">React & Applications Web Modernes</label><br />
+          <input type="checkbox" id="ia" />
+          <label for="ia">IA pour les Développeurs</label><br /><br />
+        </fieldset>
+        <fieldset id="daysfield">
+          <label for="days">Journée(s) de participation</label><br />
+          <label for="day1"
+            ><input type="radio" name="days" id="day1" required /> Jour 1</label
+          ><br />
+          <label for="day2"
+            ><input type="radio" name="days" id="day2" />Jour 2</label
+          ><br />
+          <label for="both"
+            ><input type="radio" name="days" id="both" />Les deux</label
+          >
+        </fieldset>
+        <br /><br />
+
+        <label for="msg">Message : </label>
+        <textarea name="msg" id="msg" rows="4" cols="50" placeholder="Entrez votre message ici"></textarea>
+        <br /><br />
+        <label for="agrement"
+          ><input type="checkbox" id="agrement" required />J'accepte les conditions
+          d'utilisation.</label
+        ><br /><br />
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+    <div id="footer">
+      <div id="left-footer">
+        <a href="404.html" class="menu2">About</a>
+        <a href="404.html" class="menu2">Contact Us</a>
+        <a href="404.html" class="menu2">FAQ</a>
+        <a href="404.html" class="menu2">Privacy Policy</a>
+      </div>
+      <div id="right-footer">
+        <a href="https://www.facebook.com" target="_blank"
+          ><img src="img/icons8-facebook-50.png" alt="Facebook"
+        /></a>
+        <a href="https://www.Instagram.com" target="_blank"
+          ><img src="img/icons8-instagram-50.png" alt="Instagram"
+        /></a>
+        <a href="https://www.Tiktok.com" target="_blank"
+          ><img src="img/icons8-tiktok-50.png" alt="Tiktok"
+        /></a>
+        <a href="https://www.X.com" target="_blank"
+          ><img src="img/icons8-x-50.png" alt="X"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>
