@@ -354,7 +354,7 @@ textarea {
 input::placeholder {
   animation: scaleup 3s ease-in-out infinite;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 0.9 em;
+  font-size: 0.9em;
 }
 
 @keyframes scaleup {
