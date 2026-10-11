@@ -67,7 +67,7 @@ body {
 
 #btn {
   background-color: #6bb859;
-  border-radius: 25px;
+  border-radius: 50px 10px 50px 10px;
   border-color: #372929;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   color: #ffffff;
@@ -83,7 +83,7 @@ body {
 }
 
 #btn:hover {
-  background-color: #8ecc80;
+  background-color: #6d0f9f;
   border-color: rgb(186, 226, 226);
   cursor: pointer;
   border-radius: 10px 50px 10px 50px;
