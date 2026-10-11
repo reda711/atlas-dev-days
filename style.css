@@ -3,7 +3,9 @@ body {
 }
 
 #web {
-  margin-bottom: 55px;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+  padding-inline: 1rem;
 }
 
 #dev {
@@ -22,7 +24,7 @@ body {
   margin-bottom: 100px;
 }
 #logo {
-  font-size: 48px;
+  font-size: clamp(1.5rem, 3vw, 3rem);
 }
 .name {
   flex: 1;
@@ -32,13 +34,12 @@ body {
 
 .menu {
   display: inline-block;
-  padding-right: 40px;
+  padding-right: clamp(0.5rem, 2vw, 2rem);
   text-decoration: none;
-  font-size: 1.2em;
   font-weight: bold;
   transition: transform 0.3s;
   color: #6e2525;
-  font-size: clamp(0.875rem, 1.2vw, 1.125rem);
+  font-size: clamp(0.75rem, 1.2vw, 1.125rem);
 }
 
 .menu:hover {
@@ -68,10 +69,11 @@ body {
   background-color: #6bb859;
   border-radius: 25px;
   border-color: #372929;
-  font-size: 1.5em;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   color: #ffffff;
-  height: 2em;
-  width: 10em;
+  height: auto;
+  min-height: 2.5em;
+  width: clamp(10rem, 30vw, 15rem);
 }
 
 #btncontainer {
@@ -87,24 +89,17 @@ body {
 
 #footer {
   background-color: #b8c5d1;
-}
-
-#left-footer {
-  padding-left: 25px;
-  padding-top: 25px;
-  height: 20px;
-  width: 1000px;
-}
-
-#right-footer {
-  padding-left: 1250px;
+  display: flex;
+  height: 99px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .menu2 {
-  padding: 20px;
+  padding: clamp(0.4rem, 1.2vw, 1.25rem);
   display: inline-block;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: clamp(0.75rem, 1.2vw, 1.2rem);
   font-weight: bold;
   transition: transform 0.3s;
 }
@@ -114,6 +109,10 @@ body {
   color: #554c4c;
 }
 
+.imagess {
+  width: clamp(1.5rem, 3vw, 3.125rem);
+  height: auto;
+}
 .imagess,
 .people {
   transition: transform 0.5s;
@@ -138,20 +137,18 @@ body {
   display: flex;
   justify-content: center;
 }
-#ateliersfield {
-  width: 300px;
-  margin-bottom: 20px;
+#ateliersfield , #daysfield  {
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
 }
 
-#daysfield {
-  width: 300px;
-}
+
 
 #form {
   border: 3px, rgb(190, 174, 174), solid;
   background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
   border-radius: 10px;
-  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,11 +156,14 @@ body {
   margin-top: 15px;
   margin-bottom: 15px;
   padding-bottom: 25px;
+  width: min(500px, calc(100% - 2rem));
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 label {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.4em;
+  font-size: clamp(1rem, 1.5vw, 1.4rem);
 }
 
 #submit {
@@ -187,12 +187,16 @@ label {
 }
 
 #bodyprogram {
-  border: 5px, black, solid;
+  border: 5px solid black;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 1rem;
   background-color: #2e2323;
   color: #ffffff;
-  height: 600px;
+  min-height: 600px;
+  height: auto;
+  padding: 1rem;
 }
 
 time {
@@ -209,6 +213,7 @@ time {
 }
 
 article {
+  
   margin-top: 20px;
   height: 150px;
   width: 350px;
@@ -243,17 +248,18 @@ article {
   justify-content: center;
   margin-top: 25px;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 50px;
   padding-bottom: 50px;
 }
 .first {
-  margin-left: 150px;
-  height: 405px;
+  margin: 0;
+  width: clamp(16rem, 28vw, 18.75rem);
+  height: auto;
+  min-height: 25rem;
   background-color: rgb(218, 210, 210);
-  width: 300px;
-  border: 1px, white, solid;
+  border: 1px solid white;
   border-radius: 10px;
-  margin-bottom: 30px;
+  box-sizing: border-box;
   transition:
     box-shadow 0.3s ease-in-out,
     transform 0.3s ease-in-out;
@@ -268,8 +274,8 @@ article {
 }
 
 .images {
+  width: clamp(16rem, 28vw, 18.75rem);
   opacity: 1;
-  width: 300.5px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -282,7 +288,6 @@ article {
   color: grey;
   opacity: 0.5;
   font-family: monospace;
-  font-size: 1.2em;
 }
 
 .ig {
@@ -317,6 +322,15 @@ article {
   justify-content: center;
   font-size: 1.5rem;
 }
+.job {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  transition:  1s;
+}
+
+.job:hover{
+  transform: rotateX(360deg);
+}
 
 .para {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -329,21 +343,28 @@ h1 {
   font-size: clamp(2rem, 5vw, 4rem);
 }
 
-#body-register input{
-  /* width: 200px; */
-  border: 1px , #2e2323 , solid;
+#body-register input,
+select,
+textarea {
+  padding: 5px 20px;
+  text-align: center;
+  border: 1px, #2e2323, solid;
   border-radius: 15px;
-  
 }
 input::placeholder {
-  animation: scaleup 3s ease-in-out ;
+  animation: scaleup 3s ease-in-out infinite;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9 em;
 }
 
 @keyframes scaleup {
-  from {
+  0% {
     opacity: 0;
-  }  
-  to {
-    opacity: 1  ;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
