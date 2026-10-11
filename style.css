@@ -284,6 +284,8 @@ article {
 
 .social {
   display: flex;
+  justify-content: center ;
+  padding-top: 20px;
 }
 
 .job {
@@ -292,11 +294,12 @@ article {
   font-family: monospace;
 }
 
-.ig {
+.ig{
   text-decoration: none;
   display: flex;
   color: grey;
   align-items: center;
+
 }
 
 .ig:hover {
@@ -304,8 +307,12 @@ article {
 }
 
 .igimg {
-  scale: 0.3;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  margin-right: 8px;
 }
+ 
 
 .talk {
   color: rgb(38, 86, 128);
@@ -344,7 +351,9 @@ article {
 h1 {
   font-size: clamp(2rem, 5vw, 4rem);
 }
-
+textarea {
+  width: sclap(2rem, 5vw, 4rem);
+}
 #body-register input,
 select,
 textarea {
