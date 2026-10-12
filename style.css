@@ -268,7 +268,7 @@ article {
 }
 
 .first:hover {
-  transform: translateY(-2px);
+  transform: translateY(-5px);
   box-shadow:
     0 0 5px violet,
     0 0 15px violet,
